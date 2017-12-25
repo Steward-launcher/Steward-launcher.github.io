@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+    font-family: 'PingFangSC-Light';
+}
+/* 头部 */
+.nav {
+    height: 50px;
+    background: #000;
+    color: #fff;
+    background-image:url(./img/s-icon128.png);
+    background-repeat: no-repeat;
+    background-position: 100px center;
+    background-size: 32px;
+    position: relative;
+}
+.intro {
+    position: absolute;
+    left: 150px;
+    top: 0;
+}
+.nav-ul {
+    overflow: hidden;
+    margin-right: 100px;
+}
+.nav-item {
+    float: right;
+    list-style-type:none;
+    font-weight: 300;
+    padding: 0 30px;
+    line-height: 50px;
+
+}
+.banner-wrap {
+    position: relative;
+}
+.banner-bkg {
+    width: 100%;
+}
+.banner-content {
+    position: absolute;
+    background-color: rgba(0,0,0, .6);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+.banner-info {
+    width: 80%;
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    font-family: italic;
+}
+.left-box {
+    flex: 1;
+    border-right: 1px solid #ccc;
+    line-height: 200px;
+    font-family: italic;
+    font-size: 80px;
+    color: #fff;
+}
+.right-box {
+    flex: 2;
+    font-size: 40px;
+    color: #ccc;
+    font-weight: 100;
+    padding: 0 30px;
+
+
+}
+.tip {
+    display: inline-block;
+    background: rgba(255,255,255, .4);
+    font-size: 40px;
+    width: 600px;
+    text-align: left;
+    font-weight: 200;
+    color: #eee;
+}
+/* 三种模式 */
+.section {
+    display: flex;
+    height: 400px;
+    margin: 30px 0;
+    background-color: #f9f9f9;
+}
+.model-info {
+    flex: 1;
+    padding: 30px 50px;
+    background-color: #000;
+    color: #fff;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    font-size: 40px;
+}
+.model-subtitle {
+    font-size: 25px;
+}
+.model-ul {
+    font-size: 20px;
+}
+.model-ul li {
+    padding: 20px;
+}
+.item1 {
+    flex: 2;
+}
+.item2 {
+    flex: 4;
+}
+.item3 {
+    flex: 2;
+}
+.item-img {
+    width: 100%;
+}
+/*三种模式样式2*/
+.model-title-2 {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0 30px;
+}
+.model-subtitle-2 {
+    text-align: center;
+    text-indent: 300px;
+    font-size: 30px;
+    margin: 0;
+}
+.model-info-2 {
+    flex: 1;
+    font-size: 30px;
+    padding: 20px;
+}
+.model-img-wrap {
+    flex: 1;
+    background: #000;
+}
+.model-img {
+    height:400px;
+}
+.rank {
+    font-size: 100px;
+    color: #ddd;
+    font-weight: bold;
+}
+.item-title {
+    font-size: 40px;
+}
+.item-info {
+    text-indent: 100px;
+    color: #666;
+}
+/*使用场景*/
+.scene-wrap {
+    display: flex;
+    padding: 0;
+}
+.scene-item {
+    flex: 1;
+    list-style-type:none;
+    position: relative;
+}
+.scene-item img {
+    width: 100%;
+}
+.scenet-info-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.scenet-info-detail {
+    margin-top: 50px;
+}
