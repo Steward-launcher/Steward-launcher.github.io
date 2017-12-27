@@ -4,6 +4,7 @@ body {
     font-family: 'PingFangSC-Light';
 }
 /* 头部 */
+
 .nav {
     height: 50px;
     background: #000;
@@ -14,6 +15,17 @@ body {
     background-size: 32px;
     position: relative;
 }
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.nav a:hover {
+    opacity: .6;
+}
+
 .intro {
     position: absolute;
     left: 150px;
@@ -83,7 +95,6 @@ body {
 /* 三种模式 */
 .section {
     display: flex;
-    height: 400px;
     margin: 30px 0;
     background-color: #f9f9f9;
 }
@@ -140,7 +151,7 @@ body {
     background: #000;
 }
 .model-img {
-    height:400px;
+    width: 100%;
 }
 .rank {
     font-size: 100px;
@@ -153,6 +164,7 @@ body {
 .item-info {
     text-indent: 100px;
     color: #666;
+    font-size: 21px;
 }
 /*使用场景*/
 .scene-wrap {
@@ -164,6 +176,11 @@ body {
     list-style-type:none;
     position: relative;
 }
+
+.scene-item:hover .scenet-info-wrap {
+   opacity: 0;
+}
+
 .scene-item img {
     width: 100%;
 }
@@ -174,6 +191,7 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,.5);
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     z-index: 1;
     color: #fff;
     font-size: 30px;
@@ -181,4 +199,56 @@ body {
 }
 .scenet-info-detail {
     margin-top: 50px;
+}
+
+.footer {
+    background: #f0f0f0;
+    padding: 24px 0;
+}
+
+.logo span {
+    display: block;
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+    background: url(./img/s-icon128.png) no-repeat center center;
+    background-size: 50px 50px;
+}
+
+.groups {
+    display: flex;
+    justify-content: space-around;
+}
+
+.groups .links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.groups .links a {
+    margin-bottom: 6px;
+    color: #555;
+    text-decoration: none;
+}
+
+.groups .links a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.copywrite {
+    color: #888;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.copywrite a {
+    color: #888;
+    text-decoration: none;
+}
+
+.copywrite a:hover {
+    color: #666;
+    text-decoration: underline;
 }

@@ -1,9 +1,11 @@
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>okSteward</title>
-<link rel="stylesheet" href="normalize.css">
-<link rel="stylesheet" href="index.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Steward - 浏览器命令启动器</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -11,9 +13,15 @@
         <div class="nav">
             <p class="intro"> Steward in Chrome</p>
             <ul class="nav-ul">
-                <li class="nav-item">简介</li>
-                <li class="nav-item">使用场景</li>
-                <li class="nav-item">使用教程</li>
+                <li class="nav-item">
+                    <a href="http://oksteward.com/steward-document-zh/">帮助文档</a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://bbs.oksteward.com">论坛</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/solobat/Steward">源码</a>
+                </li>
                 <li class="nav-item">关于</li>
             </ul>
         </div>
@@ -23,51 +31,40 @@
                 <div class="banner-info">
                     <div class="left-box">Steward</div>
                     <div class="right-box">
-                        <p>a tool in chrome</p>
-                        <p>you need it</p>
+                        <p>A command launcher for Chrome</p>
+                        <p>With three modes</p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <div class="main">
-
-
-        <!-- <div class="section">
-            <div class="model-info">
-                <p clsss="model-title">三种模式</p>
-                <p class="model-subtitle">满足不同个性化需求</p>
-                <ul class="model-ul">
-                    <li>new tab 模式</li>
-                    <li>popup 模式</li>
-                    <li>页面模式</li>
-                </ul>
-            </div>
-            <div class="item1">
-                <img  class="item-img" src="./img/normal.jpg" alt="">
-            </div>
-        </div> -->
-        <!-- <div class="section">
-            <div class="item2">
-                <img  class="item-img"  src="./img/popup.jpg" alt="">
-            </div>
-            <div class="item3">
-                <img class="item-img"  src="./img/page.jpg" alt="">
-            </div>
-        </div> -->
         <div class="model-2">
             <p class="model-title-2">三种使用模式</p>
-            <p class="model-subtitle-2">——满足不同个性化需求</p>
+            <p class="model-subtitle-2">—— 满足不同个性化需求</p>
         </div>
         <div class="section">
             <div class="model-info-2">
-                <p class="item-title"><span class="rank">1. </span>new tab 模式</p>
-                <p class="item-info">占用new tab页面</p>
-                <p class="item-info">来自bing等的精美壁纸欣赏</p>
-                <p class="item-info">随机出现各种命令</p>
+                <p class="item-title">
+                    <span class="rank">1. </span>New Tab 模式</p>
+                <p class="item-info">新标签页使用</p>
+                <p class="item-info">来自 bing / unsplash 等的精美壁纸</p>
+                <p class="item-info">丰富的自定义项，让 Steward 成为你的贴心管家</p>
             </div>
             <div class="model-img-wrap">
                 <img class="model-img" src="./img/newtab.jpg" alt="">
+            </div>
+        </div>
+        <div class="section">
+            <div class="model-info-2">
+                <p class="item-title">
+                    <span class="rank">2. </span>页面模式</p>
+                <p class="item-info">在任意页面使用快捷键唤出</p>
+                <p class="item-info">独有的网站地图，帮你快速访问知乎 / Github 等网站</p>
+                <p class="item-info">以及未来无限的可能</p>
+            </div>
+            <div class="model-img-wrap">
+                <img class="model-img" src="./img/page.jpg" alt="">
             </div>
         </div>
         <div class="section">
@@ -75,21 +72,11 @@
                 <img class="model-img" src="./img/popup.jpg" alt="">
             </div>
             <div class="model-info-2">
-                <p class="item-title"><span class="rank">2. </span>popup 模式</p>
-                <p class="item-info">不占用new tab页面</p>
-                <p class="item-info">不影响之前使用习惯</p>
-                <p class="item-info">方便灵活</p>
-            </div>
-        </div>
-        <div class="section">
-            <div class="model-info-2">
-                <p class="item-title"><span class="rank">3. </span>页面模式</p>
-                <p class="item-info">在任意页面唤出</p>
-                <p class="item-info">来自bing等的精美壁纸欣赏</p>
-                <p class="item-info">随机出现各种命令</p>
-            </div>
-            <div class="model-img-wrap">
-                    <img class="model-img" src="./img/page.jpg" alt="">
+                <p class="item-title">
+                    <span class="rank">3. </span>Popup 模式</p>
+                <p class="item-info">快捷键或点击图标唤起</p>
+                <p class="item-info">最基础的模式</p>
+                <p class="item-info">最好的可用性</p>
             </div>
         </div>
     </div>
@@ -97,41 +84,67 @@
         <p class="model-title-2">多种使用场景</p>
         <p class="model-subtitle-2">——满足不同场景需求</p>
     </div>
-        <ul class="scene-wrap">
-            <li class="scene-item">
-                <img src="./img/tq.jpg" alt="">
-                <div class="scenet-info-wrap">
-                    <p class="scenet-info-detail">查询天气</p>
-                </div>
-            </li>
-            <li class="scene-item">
-                <img src="./img/tq.jpg" alt="">
-                <div class="scenet-info-wrap">
-                    <p class="scenet-info-detail">开关应用</p>
-                </div>
-            </li>
-            <li class="scene-item">
-                <img src="./img/tq.jpg" alt="">
-                <div class="scenet-info-wrap">
-                    <p class="scenet-info-detail">查找标签</p>
-                </div>
-            </li>
-            <li class="scene-item">
-                <img src="./img/tq.jpg" alt="">
-                <div class="scenet-info-wrap">
-                    <p class="scenet-info-detail">常用网址</p>
-                </div>
-            </li>
-            <li class="scene-item">
-                <img src="./img/tq.jpg" alt="">
-                <div class="scenet-info-wrap">
-                    <p class="scenet-info-detail">历史纪录</p>
-                </div>
-            </li>
-
-        </ul>
-    <footer>
-
+    <ul class="scene-wrap">
+        <li class="scene-item">
+            <img src="./img/hp-bm-min.png" alt="">
+            <div class="scenet-info-wrap">
+                <p class="scenet-info-detail">书签查询</p>
+            </div>
+        </li>
+        <li class="scene-item">
+            <img src="./img/hp-on-min.png" alt="">
+            <div class="scenet-info-wrap">
+                <p class="scenet-info-detail">扩展开关</p>
+            </div>
+        </li>
+        <li class="scene-item">
+            <img src="./img/hp-tq-png-min.png" alt="">
+            <div class="scenet-info-wrap">
+                <p class="scenet-info-detail">查询天气</p>
+            </div>
+        </li>
+        <li class="scene-item">
+            <img src="./img/hp-sitemap-min.png" alt="">
+            <div class="scenet-info-wrap">
+                <p class="scenet-info-detail">网站地图</p>
+            </div>
+        </li>
+        <li class="scene-item">
+            <img src="./img/hp-diary-min.png" alt="">
+            <div class="scenet-info-wrap">
+                <p class="scenet-info-detail">简单日记</p>
+            </div>
+        </li>
+    </ul>
+    <footer class="footer">
+        <div class="groups">
+            <div class="links">
+                <a href="http://oksteward.com" class="logo">
+                    <span></span>
+                </a>
+            </div>
+            <div class="links">
+                <a href="http://oksteward.com/steward-document-zh/CHANGELOG.html">更新日志</a>
+                <a href="http://oksteward.com/steward-document-zh/" target="_blank">帮助</a>
+                <a href="http://bbs.oksteward.com/" target="_blank">论坛</a>
+            </div>
+            <div class="links">
+                <a href="http://tomasy.me" target="_blank">关于作者</a>
+                <a href="https://weibo.com/soloooo" target="_blank">微博</a>
+                <a href="https://opensource.org/licenses/MIT" target="_blank">MIT Licenses</a>
+            </div>
+            <div class="links">
+                <a href="https://github.com/solobat/wordcard" target="_blank">单词小卡片 - 从单词、例句收集到命令式背单词</a>
+            </div>
+        </div>
+        <div class="copywrite">
+            <span>Steward - Chrome 浏览器命令启动器。</span>
+            <span>&nbsp;©&nbsp;2017
+                <a href="http://oksteward.com">oksteward.com</a> by
+                <a href="http://tomasy.me" target="_blank">Tomas Yang</a>
+            </span>
+        </div>
     </footer>
 </body>
+
 </html>
