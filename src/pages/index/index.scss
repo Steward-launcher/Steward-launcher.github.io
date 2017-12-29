@@ -1,30 +1,28 @@
-@charset "UTF-8";
-/* CSS Document */
+
 body {
     font-family: 'PingFangSC-Light';
     min-width: 1210px;
 }
-/* 头部 */
 
 .nav {
     height: 50px;
     background: #000;
     color: #fff;
-    background-image:url(./img/s-icon128.png);
+    background-image: url(../../img/icons/s-icon128.png);
     background-repeat: no-repeat;
     background-position: 100px center;
     background-size: 32px;
     position: relative;
-}
 
-.nav a {
-    text-decoration: none;
-    color: #fff;
-    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
+    a {
+        text-decoration: none;
+        color: #fff;
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-.nav a:hover {
-    opacity: .6;
+        &:hover {
+            opacity: .6;
+        }
+    }
 }
 
 .intro {
@@ -32,18 +30,21 @@ body {
     left: 150px;
     top: 0;
 }
+
 .nav-ul {
     overflow: hidden;
     margin-right: 100px;
-}
-.nav-item {
-    float: right;
-    list-style-type:none;
-    font-weight: 300;
-    padding: 0 30px;
-    line-height: 50px;
 
+    .nav-item {
+        float: right;
+        list-style-type:none;
+        font-weight: 300;
+        padding: 0 30px;
+        line-height: 50px;
+    
+    }
 }
+
 .banner-wrap {
     position: relative;
 }
@@ -97,15 +98,16 @@ body {
 .steward-app-links {
     font-size: 16px;
     color: #ddd;
+
+    a {
+        color: #fff;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
-.steward-app-links a {
-    color: #fff;
-}
-
-.steward-app-links a:hover {
-    opacity: 1;
-}
 
 .chrome-webstore {
     font-size: 34px;
@@ -115,13 +117,12 @@ body {
 
 .crx-download {
     text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
-.crx-download:hover {
-    text-decoration: underline;
-}
-
-/* 三种模式 */
 .section {
     display: flex;
     margin: 30px 0;
@@ -142,9 +143,10 @@ body {
 }
 .model-ul {
     font-size: 20px;
-}
-.model-ul li {
-    padding: 20px;
+
+    li {
+        padding: 20px;
+    }
 }
 .item1 {
     flex: 2;
@@ -158,7 +160,6 @@ body {
 .item-img {
     width: 100%;
 }
-/*三种模式样式2*/
 .model-title-2 {
     text-align: center;
     font-size: 50px;
@@ -198,31 +199,34 @@ body {
 
 .features {
     padding: 16px;
+
+    ul {
+        margin: 0;
+    }
 }
 
-.features ul {
-    margin: 0;
-}
-
-/*使用场景*/
 .scene-wrap {
     display: flex;
     padding: 0;
 }
+
 .scene-item {
     flex: 1;
     list-style-type:none;
     position: relative;
+
+    &:hover {
+        .scenet-info-wrap {
+            opacity: 0;
+        }
+    }
+    
+    img {
+        display: block;
+        width: 100%;
+    }
 }
 
-.scene-item:hover .scenet-info-wrap {
-   opacity: 0;
-}
-
-.scene-item img {
-    display: block;
-    width: 100%;
-}
 .scenet-info-wrap {
     display: flex;
     align-items: center;
@@ -257,13 +261,13 @@ body {
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-}
 
-.plugin .icon {
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+    .icon {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
 }
 
 .footer {
@@ -276,44 +280,44 @@ body {
     margin-top: 15px;
     width: 50px;
     height: 50px;
-    background: url(./img/s-icon128.png) no-repeat center center;
+    background: url(../../img/icons/s-icon128.png) no-repeat center center;
     background-size: 50px 50px;
 }
 
 .groups {
     display: flex;
     justify-content: space-around;
-}
 
-.groups .links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
-.groups .links a {
-    color: #ccc; 
-    text-decoration: none;
-    line-height: 30px;
-    width: 130px;
-}
+        a {
+            color: #ccc; 
+            text-decoration: none;
+            line-height: 30px;
+            width: 130px;
 
-.groups .links a:hover {
-    color: #eee;
+            &:hover {
+                color: #eee;
+            }
+        }
+    }
 }
 
 .copywrite {
     color: #888;
     margin-top: 12px;
     text-align: center;
-}
 
-.copywrite a {
-    color: #888;
-    text-decoration: none;
-}
+    a {
+        color: #888;
+        text-decoration: none;
 
-.copywrite a:hover {
-    color: #666;
-    text-decoration: underline;
+        &:hover {
+            color: #666;
+            text-decoration: underline;
+        }
+    }
 }
