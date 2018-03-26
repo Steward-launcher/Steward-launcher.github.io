@@ -6,10 +6,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 module.exports = {
-  entry: './src/pages/index/index.js',
+  entry: {
+    index: './src/pages/index/index.js',
+    donate: './src/pages/donate/donate.js'
+  },
   output: {
-    filename: 'index.bundle.js',
-    path: path.resolve(__dirname, '../')
+    path: path.resolve(__dirname, '../'),
+    filename: '[name].bundle.js'
   },
 
   module: {
@@ -45,7 +48,13 @@ module.exports = {
       filename: 'index.html',
       chunks: ['index']
     }),
-    new ExtractTextPlugin("css/index.css"),
+    new HtmlWebpackPlugin({
+      title: 'Steward - A command launcher for Chrome',
+      template: './src/pages/donate/donate.html',
+      filename: 'donate.html',
+      chunks: ['donate']
+    }),
+    new ExtractTextPlugin("css/[name].css"),
     new CopyWebpackPlugin([
       { from: 'src/img', to: 'img' },
       { from: 'src/css', to: 'css' }
