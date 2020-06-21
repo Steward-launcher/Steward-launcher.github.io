@@ -11,12 +11,12 @@
             <li class="nav-item">
               <router-link to="/plugins">{{$t("Plugins")}}</router-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link to="/websites">{{$t("Websites")}}</router-link>
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
               <router-link to="/components">{{$t("Components")}}</router-link>
-            </li>
+            </li> -->
           </ul>
         </nav>
         <nav class="right-nav">
