@@ -49,7 +49,10 @@ export default {
         searchText: ''
       },
       options: {
-        categories: PLUGIN_CATEGORIES
+        categories: [
+          { label: 'All', value: '' },
+          ...PLUGIN_CATEGORIES
+        ]
       }
     }
   },
@@ -78,7 +81,7 @@ export default {
     },
 
     onAddClick() {
-      this.$router.push({ name: 'PluginCreateOrUpdate' });
+      this.$router.push({ name: 'PluginCreate' });
     }
   },
 

@@ -1,12 +1,15 @@
 <template>
   <div class="plugin-row">
+    <div class="plugin-logo-wrap">
+      <img class="plugin-logo" :src="plugin.iconUrl" alt="">
+    </div>
     <div class="plugin-main">
       <div class="plugin-name">
         <router-link :to="`/plugin/${plugin.objectId}`">
           {{ plugin.name }}
         </router-link>
       </div>
-      <div class="plugin-intro">{{ plugin.pattern }}</div>
+      <div class="plugin-intro">{{ plugin.description }}</div>
     </div>
     <div class="plugin-right">
       <div class="plugin-btns">
@@ -64,9 +67,19 @@ export default {
   display: flex;
   padding: 8px 12px;
   border-bottom: 1px solid #ededed;
+  align-items: center;
 
   &:last-child {
     border-bottom: 0;
+  }
+}
+
+.plugin-logo-wrap {
+  margin-right: 20px;
+
+  .plugin-logo {
+    width: 32px;
+    height: 32px;
   }
 }
 

@@ -56,7 +56,7 @@ export function isExisted(bundleId) {
 
 function create(attrs) {
   const { bundleId, category = 'other', codeUrl, commands, description, iconUrl,
-    name, repository, version } = attrs 
+    name, repository, version, readme } = attrs 
 
   const plugin = new Plugin();
 
@@ -69,6 +69,7 @@ function create(attrs) {
   plugin.set('name', name)
   plugin.set('repository', repository)
   plugin.set('version', version)
+  plugin.set('readme', readme)
   plugin.set('author', AV.User.current())
   setACL(plugin)
 
@@ -90,7 +91,7 @@ export function addOne(attrs) {
 export function updateOne(id, attrs) {
   const plugin = AV.Object.createWithoutData('Plugin', id)
   const { category = 'other', codeUrl, commands, description, iconUrl,
-    name, repository, version } = attrs 
+    name, repository, version, readme } = attrs 
 
   plugin.set('category', category)
   plugin.set('codeUrl', codeUrl)
@@ -100,6 +101,7 @@ export function updateOne(id, attrs) {
   plugin.set('name', name)
   plugin.set('repository', repository)
   plugin.set('version', version)
+  plugin.set('readme', readme)
 
   return plugin.save()
 }
