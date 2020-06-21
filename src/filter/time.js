@@ -6,5 +6,5 @@ export function timeago(time) {
 }
 
 export function date(time) {
-  return dayjs.unix(time).format('YYYY/MM/DD')
+  return dayjs(time).format('MM/DD/YYYY')
 }
