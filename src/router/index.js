@@ -41,6 +41,11 @@ const routes = [
     path: '/plugin/create',
     name: 'PluginCreate',
     component: () => import(/* webpackChunkName: "pluginform" */ '../views/PluginCreateOrUpdate.vue'),
+  },
+  {
+    path: '/plugin/update/:id',
+    name: 'PluginUpdate',
+    component: () => import(/* webpackChunkName: "pluginform" */ '../views/PluginCreateOrUpdate.vue'),
   }
 ]
 
