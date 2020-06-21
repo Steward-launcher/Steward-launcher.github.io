@@ -1,4 +1,4 @@
-# steward-launcher.github.io
+# steward-launcher.github.io v2
 
 ## Project setup
 ```
