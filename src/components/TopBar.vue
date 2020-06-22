@@ -27,7 +27,8 @@
                 aria-label="Star solobat/steward on GitHub">Star</a>
             </li>
             <li>
-              <a href="https://oksteward.com/steward-documents/">{{$t("Document")}}</a>
+              <a href="https://oksteward.com/steward-documents/" v-if="$i18n.locale === 'en'">{{$t("Document")}}</a>
+              <a href="https://oksteward.com/steward-documents/zh/" v-if="$i18n.locale === 'zh_CN'">{{$t("Document")}}</a>
             </li>
             <li v-if="$i18n.locale === 'zh_CN'">
               <a href="http://bbs.oksteward.com">{{$t("Forum")}}</a>

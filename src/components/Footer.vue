@@ -23,8 +23,8 @@
           <a href="https://opensource.org/licenses/MIT" target="_blank">MIT Licenses</a>
         </div>
         <div class="links">
-          <a href="https://github.com/solobat/paodin" target="_blank">{{$t("Paodin")}}</a>
-          <a href="https://github.com/solobat/steward-helper" target="_blank">Steward Helper</a>
+          <a href="https://paodin.app/" target="_blank">{{$t("Paodin")}}</a>
+          <a href="https://ihelpers.app/" target="_blank">Steward Helper</a>
         </div>
       </div>
       <div class="copywrite">
