@@ -58,10 +58,6 @@ export default {
   },
 
   methods: {
-    getAutomation(aid) {
-      return this.list.find(item => item.objectId === aid)
-    },
-
     loadData() {
       const { category, searchText } = this.filter
 
@@ -107,6 +103,7 @@ export default {
 
 .plugins {
   background: #fff;
+  margin-bottom: 20px;
 }
 
 .btn-add {
